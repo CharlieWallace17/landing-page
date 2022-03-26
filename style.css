@@ -2,6 +2,14 @@
     font-family: 'Roboto', sans-serif;
 }
 
+body {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    margin: 0px;
+    /* height: 100vh; */
+}
+
 a {
     text-decoration: none;
 }
@@ -17,6 +25,25 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    gap: 30px;
+}
+
+.hero {
+    flex: 1;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    padding: 10px 100px 50px 100px;
+    flex: 1;
 }
 
 .header,
@@ -41,10 +68,19 @@ ul {
     color: #F9FAF8;
 }
 
+.text {
+ width: 400px;   
+ display: flex;
+ flex-direction: column;
+ gap: 10px;
+}
+
 .image {
-    height: 200px;
     width: 400px;
-    background-color:gray
+    background-color:gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 button {
@@ -54,22 +90,18 @@ button {
     font-weight: bold;
     border-radius: 10px;
     padding: 10px 40px;
+    width: 150px;
 }
 
 .title button {
     border-color: #1F2937;
 }
 
-.action-box,
-.action button {
-    border-color: #F9FAF8;
-    color: #F9FAF8;
-    border-width: 2px;
-}
-
-.action-box {
-    background-color: #3882F6;
-    width: 60vh;
+.content{
+    flex: 1;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
 }
 
 .content-title,
@@ -81,6 +113,14 @@ button {
 .content-title {
     font-size: 36px;
     font-weight: 900;
+    margin: auto;
+}
+
+.content-boxes {
+    display: flex;
+    text-align: center;
+    flex: 1;
+    margin: 20px 50px;justify-content: space-between;
 }
 
 .box {
@@ -89,6 +129,43 @@ button {
     width: 150px;
     border: solid #3882F6 5px;
     border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.sub-text {
+    width: 150px;
+}
+
+.action {
+    /* flex-shrink: 0; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.action-box {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    padding: 20px 100px;
+}
+
+.action-box,
+.action button {
+    color: #F9FAF8;
+    border: solid #F9FAF8;
+    border-width: 2px;
+}
+
+.action-box {
+    background-color: #3882F6;
+    width: 60vh;
+}
+
+.statement {
+    font-weight: 900;
 }
 
 .quote {
@@ -97,10 +174,25 @@ button {
     font-size: 36px;
     font-style: italic;
     font-weight: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 100px;
+    flex: 1;
 }
 
 .thor {
     font-style: normal;
     font-size: 18px;
     font-weight: bolder;
+    align-self: flex-end;
+}
+
+.footer {
+    /* flex-shrink: 0; */
+    height:80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
